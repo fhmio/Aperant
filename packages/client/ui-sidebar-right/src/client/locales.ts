@@ -1,0 +1,60 @@
+/**
+ * `sidebarRight` namespace dictionaries.
+ *
+ * Everything a user reads in this column is here, including the strings handed
+ * to the docking kit — the kit renders no copy of its own, so its whole
+ * vocabulary is this package's to own and translate.
+ */
+
+/** English dictionary (the key-set source of truth). */
+export const en = {
+  'chrome.expand': 'Open sidebar',
+  'chrome.expandAria': 'Open right sidebar',
+  'chrome.collapse': 'Collapse sidebar',
+  'chrome.collapseAria': 'Collapse right sidebar',
+  'chrome.toFullscreen': 'Fullscreen',
+  'chrome.exitFullscreen': 'Exit fullscreen',
+  'dock.emptyPane': 'Empty pane',
+  'dock.splitPane': 'Split',
+  'dock.splitPaneDisabled': 'Two panes is the limit',
+  'dock.splitPaneNarrow': 'Not enough width to split, widen the sidebar',
+  'dock.closeTab': 'Close',
+  'dock.addTab': 'New tab',
+  'dock.dockFloat': 'Send back to the sidebar',
+  'dock.closeFloat': 'Close',
+  'dock.drop.center': 'Move here',
+  'dock.drop.left': 'Add left split',
+  'dock.drop.right': 'Add right split',
+  'dock.drop.top': 'Add top split',
+  'dock.drop.bottom': 'Add bottom split',
+  'tab.guide.title': 'Start',
+  'tab.unavailable': 'Nothing here can view this kind of content yet.',
+} satisfies Record<string, string>
+
+/** Right-Sidebar dictionary key union. */
+export type SidebarRightKey = keyof typeof en
+
+/** Arabic dictionary, checked against the English key set. */
+export const ar = {
+  'chrome.expand': 'فتح الشريط الجانبي',
+  'chrome.expandAria': 'فتح الشريط الجانبي الأيمن',
+  'chrome.collapse': 'طي الشريط الجانبي',
+  'chrome.collapseAria': 'طي الشريط الجانبي الأيمن',
+  'chrome.toFullscreen': 'ملء الشاشة',
+  'chrome.exitFullscreen': 'الخروج من ملء الشاشة',
+  'dock.emptyPane': 'لوح فارغ',
+  'dock.splitPane': 'تقسيم',
+  'dock.splitPaneDisabled': 'الحد الأقصى لوحان فقط',
+  'dock.splitPaneNarrow': 'العرض غير كافٍ للتقسيم، يرجى توسيع الشريط أولاً',
+  'dock.closeTab': 'إغلاق',
+  'dock.addTab': 'تبويب جديد',
+  'dock.dockFloat': 'إعادة التثبيت في الشريط الجانبي',
+  'dock.closeFloat': 'إغلاق',
+  'dock.drop.center': 'نقل إلى هنا',
+  'dock.drop.left': 'تقسيم لليسار',
+  'dock.drop.right': 'تقسيم لليمين',
+  'dock.drop.top': 'تقسيم للأعلى',
+  'dock.drop.bottom': 'تقسيم للأسفل',
+  'tab.guide.title': 'البدء',
+  'tab.unavailable': 'لا يتوفر عارض لهذا النوع من المحتوى حالياً.',
+} satisfies Record<SidebarRightKey, string>

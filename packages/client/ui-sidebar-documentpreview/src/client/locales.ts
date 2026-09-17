@@ -1,0 +1,54 @@
+/**
+ * `sidebarDocumentPreview` namespace dictionaries.
+ *
+ * The failure lines are the point of this file: a preview that cannot show a
+ * page has to say which of several different things went wrong, and each one
+ * suggests a different next step for the reader.
+ */
+
+/** English dictionary (the key-set source of truth). */
+export const en = {
+  loading: 'Reading…',
+  loadMore: 'Load more',
+  changed: 'The file has changed, showing the previous content.',
+  reloadNow: 'Reload',
+  reload: 'Read the file again',
+  'wrap.enable': 'Turn on line wrap',
+  'wrap.disable': 'Turn off line wrap',
+  'wrap.aria': 'Line wrap',
+  openWith: 'Open with',
+  'viewer.text': 'Plain text',
+  resourceUnavailable: 'The file resource service is unavailable.',
+  rendererUnavailable: 'The {name} preview is unavailable.',
+  'error.notFound': 'File not found. It may have been moved or deleted.',
+  'error.tooLarge': 'This page exceeds the {limit} limit and cannot be read.',
+  'error.notText': 'Not a text file, preview is unavailable for now.',
+  'error.notRegularFile': 'Not a regular file, nothing to display.',
+  'error.unavailable': 'Read failed: {message}',
+  retry: 'Retry',
+} satisfies Record<string, string>
+
+/** Text-preview dictionary key union. */
+export type SidebarDocumentPreviewKey = keyof typeof en
+
+/** Arabic dictionary, checked against the English key set. */
+export const ar = {
+  loading: 'جارٍ القراءة…',
+  loadMore: 'تحميل المزيد',
+  changed: 'تم تعديل الملف، يتم عرض المحتوى السابق.',
+  reloadNow: 'إعادة التحميل الآن',
+  reload: 'إعادة قراءة الملف',
+  'wrap.enable': 'تفعيل التفاف السطور',
+  'wrap.disable': 'تعطيل التفاف السطور',
+  'wrap.aria': 'التفاف السطور',
+  openWith: 'فتح بواسطة',
+  'viewer.text': 'نص عادي',
+  resourceUnavailable: 'خدمة موارد الملف غير متاحة.',
+  rendererUnavailable: 'معاين {name} غير متاح.',
+  'error.notFound': 'الملف غير موجود. ربما تم نقله أو حذفه.',
+  'error.tooLarge': 'تتجاوز هذه الصفحة الحد الأقصى {limit} ولا يمكن قراءتها.',
+  'error.notText': 'ليس ملفاً نصياً، المعاينة غير متاحة حالياً.',
+  'error.notRegularFile': 'ليس ملفاً قياسياً، لا يوجد محتوى لعرضه.',
+  'error.unavailable': 'فشلت القراءة: {message}',
+  retry: 'إعادة المحاولة',
+} satisfies Record<SidebarDocumentPreviewKey, string>
