@@ -1,10 +1,14 @@
 # Aperant
 
+> **Note**: Aperant is cloned, adapted, and extended from [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`) by [DeepSeek AI](https://deepseek.com).
+
 Aperant is an open-source agent harness built on an **everything-is-a-plugin** architecture and powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://arxiv.org/abs/2608.25512).
+
+It includes full bilingual support (English and modern Arabic with RTL layout formatting), a refreshed visual identity, and modular capabilities.
 
 ## Developer preview
 
-DeepSeek Harness is in _developer preview_ and iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.**
+Aperant (based on DeepSeek Harness) is in _developer preview_ and iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.**
 
 Review the [safety notice](SAFETY.md) before running the project.
 
